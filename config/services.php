@@ -35,4 +35,26 @@ return [
         ],
     ],
 
+    'openai' => [
+        'api_key' => env('OPENAI_API_KEY'),
+        'endpoint' => env('OPENAI_ENDPOINT', 'https://api.openai.com/v1'),
+        'default_model' => env('OPENAI_DEFAULT_MODEL', 'gpt-4o'),
+    ],
+
+    'anthropic' => [
+        'api_key' => env('ANTHROPIC_API_KEY'),
+        'endpoint' => env('ANTHROPIC_ENDPOINT', 'https://api.anthropic.com/v1'),
+        'default_model' => env('ANTHROPIC_DEFAULT_MODEL', 'claude-3-5-sonnet-20241022'),
+    ],
+
+    'google' => [
+        'search_api_key' => env('GOOGLE_SEARCH_API_KEY'),
+        'search_engine_id' => env('GOOGLE_SEARCH_ENGINE_ID'),
+    ],
+
+    'aula' => [
+        'username' => env('AULA_USERNAME'),
+        'password' => env('AULA_PASSWORD'),
+    ],
+
 ];
